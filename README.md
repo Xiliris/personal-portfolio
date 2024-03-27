@@ -1,6 +1,6 @@
 # Adnan Skopljak Personal Portfolio
 
-##♻️  Tools Used ♻️
+## ♻️  Tools Used ♻️
 - ReactJS ◀️
 - SASS ◀️
 - JavaScript ◀️
