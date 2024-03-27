@@ -1,7 +1,7 @@
-#Adnan Skopljak Personal Portfolio
+# Adnan Skopljak Personal Portfolio
 
-## Tools Used
-- ReactJS
-- SASS
-- JavaScript
-- FontAwesome
+##♻️  Tools Used ♻️
+- ReactJS ◀️
+- SASS ◀️
+- JavaScript ◀️
+- FontAwesome ◀️
