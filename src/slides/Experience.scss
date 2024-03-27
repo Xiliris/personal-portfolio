@@ -1,0 +1,43 @@
+@import "../modules/mixins.scss", "../modules/colors.scss",
+  "../modules/fonts.scss";
+
+#experience {
+  @include slide;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    @include titleFlip;
+  }
+
+  .content {
+    @include textBG;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 1.3em;
+
+    section {
+      padding: 10% 5%;
+
+      h1 {
+        font-size: 1em;
+        margin: 0;
+      }
+
+      p {
+        color: $secondary;
+        margin: 12px 0;
+        font-size: 0.9em;
+      }
+
+      .date {
+        color: $secondaryDarker;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

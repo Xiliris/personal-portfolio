@@ -1,0 +1,46 @@
+@import "../modules/mixins.scss", "../modules/colors.scss",
+  "../modules/fonts.scss";
+
+#about {
+  @include slide;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    @include title;
+  }
+
+  .content {
+    @include textBG;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    font-size: 1.5em;
+
+    p {
+      color: $secondary;
+    }
+
+    button {
+      margin-top: 2em;
+      font-size: 0.8em;
+      background-color: transparent;
+      color: $background;
+      padding: 12px;
+      border: 1px solid $background;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+
+      &:hover {
+        border: 1px solid $main;
+        color: $main;
+      }
+    }
+  }
+}

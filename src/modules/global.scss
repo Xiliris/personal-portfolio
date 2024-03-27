@@ -1,0 +1,48 @@
+@import "./colors.scss";
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #313131;
+}
+
+h1 {
+  &::selection {
+    background-color: $background;
+    color: black;
+  }
+}
+
+h2,
+p {
+  &::selection {
+    background-color: $background;
+    color: $secondaryDarker;
+  }
+}

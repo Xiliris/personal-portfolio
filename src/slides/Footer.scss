@@ -1,0 +1,53 @@
+@import "../modules/mixins.scss", "../modules/colors.scss",
+  "../modules/fonts.scss";
+
+footer {
+  @include slide;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .title {
+    @include titleFlip;
+  }
+
+  .content {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-family: $BoldFont;
+      font-size: 3em;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2em;
+    }
+
+    .contact {
+      text-align: right;
+
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .footer-end {
+    border-top: 1px solid $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: 1.3em;
+    color: $secondary;
+    p {
+      font-family: $BoldFont;
+    }
+  }
+}

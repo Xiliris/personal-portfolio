@@ -1,0 +1,67 @@
+@mixin slide() {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+@mixin title() {
+  height: 20vh;
+  h1 {
+    padding: 0 10%;
+    padding-top: 5%;
+    margin: 0;
+    font-size: 4em;
+    color: $main;
+    font-family: $BoldFont;
+  }
+  &::after {
+    margin-top: 2em;
+    content: "";
+    display: block;
+    background: linear-gradient(90deg, $background 10%, transparent);
+    width: 30%;
+    height: 1px;
+  }
+}
+
+@mixin titleFlip() {
+  height: 20vh;
+  h1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+    padding-top: 5%;
+    margin: 0;
+    font-size: 4em;
+    color: $main;
+    font-family: $BoldFont;
+  }
+
+  &::after {
+    margin-top: 2em;
+    content: "";
+    display: block;
+    background: linear-gradient(90deg, $background 10%, transparent);
+    width: 30%;
+    height: 1px;
+    transform: rotate(180deg);
+    float: right;
+  }
+}
+
+@mixin textBG() {
+  position: relative;
+  overflow: hidden;
+  h3 {
+    font-size: 15em;
+    opacity: 0.05;
+    z-index: -10;
+    color: $secondaryDarker;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

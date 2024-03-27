@@ -1,0 +1,81 @@
+@import "../modules/mixins.scss", "../modules/colors.scss",
+  "../modules/fonts.scss";
+
+#contact {
+  @include slide;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    @include title;
+  }
+  .content {
+    @include textBG;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80vh;
+    font-size: 1.3em;
+    p {
+      color: $secondary;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 50px;
+      flex-grow: 1;
+      padding-right: 10%;
+      .socials {
+        .social-subsection {
+          display: flex;
+          justify-content: space-between;
+          width: 300px;
+
+          i {
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 2;
+
+      input,
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $secondary;
+        border-radius: 6px;
+        padding: 15px;
+        color: $secondary;
+        font-size: 1em;
+      }
+      textarea {
+        height: 150px;
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid $backgroundLighter;
+        background-color: $backgroundLighter;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../modules/mixins.scss", "../modules/colors.scss",
+  "../modules/fonts.scss";
+
+#skills {
+  @include slide;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    @include titleFlip;
+  }
+
+  .content {
+    @include textBG;
+
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 80vh;
+    font-size: 1.5em;
+
+    .list-skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $secondaryDarker;
+      border: 1px solid $secondaryDarker;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100px;
+      height: 130px;
+      margin: 0;
+
+      img {
+        width: 50px;
+        filter: grayscale(1);
+      }
+      .invert {
+        filter: grayscale(0) invert(100%) brightness(1);
+      }
+
+      p {
+        margin: 0;
+        margin-top: 20px;
+        font-size: 0.7em;
+      }
+    }
+  }
+}
