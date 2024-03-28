@@ -19,11 +19,21 @@ function Footer() {
       >
         <div className="visit">
           <h1>PORTFOLIO</h1>
-          <p>ABOUT</p>
-          <p>EXPERIENCE</p>
-          <p>EDUCATION</p>
-          <p>SKILLS</p>
-          <p>CONTACT</p>
+          <a href="#about">
+            <p>ABOUT</p>
+          </a>
+          <a href="#experience">
+            <p>EXPERIENCE</p>
+          </a>
+          <a href="#education">
+            <p>EDUCATION</p>
+          </a>
+          <a href="#skills">
+            <p>SKILLS</p>
+          </a>
+          <a href="#contact">
+            <p>CONTACT</p>
+          </a>
         </div>
         <div className="contact">
           <h1>CONTACT</h1>
