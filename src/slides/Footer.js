@@ -1,12 +1,29 @@
 import "./Footer.scss";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Footer() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <footer>
       <div className="title">
-        <h1>THANKS FOR VISITING</h1>
+        <h1
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0)" : "translateX(100px)",
+          }}
+        >
+          THANKS FOR VISITING
+        </h1>
       </div>
-      <div className="content">
+      <div
+        className="content"
+        ref={ref}
+        style={{
+          opacity: isInView ? 1 : 0,
+        }}
+      >
         <div className="visit">
           <h1>PORTFOLIO</h1>
           <p>ABOUT</p>

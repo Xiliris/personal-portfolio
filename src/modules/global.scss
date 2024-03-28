@@ -13,6 +13,7 @@ html {
   scroll-snap-type: y mandatory;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -45,4 +46,14 @@ p {
     background-color: $background;
     color: $secondaryDarker;
   }
+}
+
+.content {
+  transition: opacity 1s linear;
+}
+
+.title h1 {
+  white-space: nowrap;
+  transition: transform 1s ease;
+  overflow: hidden;
 }

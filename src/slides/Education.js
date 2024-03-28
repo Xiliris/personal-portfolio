@@ -1,12 +1,29 @@
 import "./Education.scss";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Education() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div id="education">
       <div className="title">
-        <h1>EDUCATION</h1>
+        <h1
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0)" : "translateX(-100px)",
+          }}
+        >
+          EDUCATION
+        </h1>
       </div>
-      <div className="content">
+      <div
+        className="content"
+        ref={ref}
+        style={{
+          opacity: isInView ? 1 : 0,
+        }}
+      >
         <h3>EDUCATION</h3>
         <section>
           <h1>COMPUTER TECHNICIAN</h1>

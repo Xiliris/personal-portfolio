@@ -1,3 +1,5 @@
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 import "./Skills.scss";
 import reactImg from "../images/skills/reactjs.png";
 import javascriptImg from "../images/skills/javascript.png";
@@ -19,12 +21,27 @@ import tailwindImg from "../images/skills/tailwind.png";
 import bootstrapImg from "../images/skills/bootstrap.svg";
 
 function Skills() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div id="skills">
       <div className="title">
-        <h1>SKILLS</h1>
+        <h1
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0)" : "translateX(100px)",
+          }}
+        >
+          SKILLS
+        </h1>
       </div>
-      <div className="content">
+      <div
+        className="content"
+        ref={ref}
+        style={{
+          opacity: isInView ? 1 : 0,
+        }}
+      >
         <h3>SKILLS</h3>
         <ListSkill name="ReactJS" imgSrc={reactImg} />
         <ListSkill name="JavaScript" imgSrc={javascriptImg} />
