@@ -8,14 +8,7 @@ function Contact() {
   return (
     <div id="contact">
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(-100px)",
-          }}
-        >
-          CONTACT
-        </h1>
+        <h1>CONTACT</h1>
       </div>
       <div
         className="content"

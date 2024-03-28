@@ -8,14 +8,7 @@ function About() {
   return (
     <div id="about">
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(-100px)",
-          }}
-        >
-          ABOUT
-        </h1>
+        <h1>ABOUT</h1>
       </div>
       <div
         className="content"

@@ -8,14 +8,7 @@ function Footer() {
   return (
     <footer>
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(100px)",
-          }}
-        >
-          THANKS FOR VISITING
-        </h1>
+        <h1>THANKS FOR VISITING</h1>
       </div>
       <div
         className="content"

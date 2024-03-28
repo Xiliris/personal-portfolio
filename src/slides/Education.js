@@ -8,14 +8,7 @@ function Education() {
   return (
     <div id="education">
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(-100px)",
-          }}
-        >
-          EDUCATION
-        </h1>
+        <h1>EDUCATION</h1>
       </div>
       <div
         className="content"
