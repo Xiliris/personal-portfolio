@@ -1,6 +1,7 @@
 import "./About.scss";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import adnanCV from "../modules/adnanCV.pdf";
 
 function About() {
   const ref = useRef(null);
@@ -29,8 +30,9 @@ function About() {
           developing high-quality, modern content. my abilities do not stop
           there, as I am skilled in Back-end technologies and more.
         </p>
-
-        <button>DOWNLOAD CV</button>
+        <a href={adnanCV} download="adnanCV" target="_blank" rel="noreferrer">
+          <button>DOWNLOAD CV</button>
+        </a>
       </div>
     </div>
   );
