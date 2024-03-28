@@ -26,14 +26,7 @@ function Skills() {
   return (
     <div id="skills">
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(100px)",
-          }}
-        >
-          SKILLS
-        </h1>
+        <h1>SKILLS</h1>
       </div>
       <div
         className="content"

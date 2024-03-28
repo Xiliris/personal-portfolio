@@ -8,14 +8,7 @@ function Experience() {
   return (
     <div id="experience">
       <div className="title">
-        <h1
-          ref={ref}
-          style={{
-            transform: isInView ? "translateX(0)" : "translateX(100px)",
-          }}
-        >
-          EXPERIENCE
-        </h1>
+        <h1>EXPERIENCE</h1>
       </div>
       <div
         className="content"
