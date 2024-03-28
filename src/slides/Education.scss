@@ -19,10 +19,8 @@
     align-items: center;
     height: 80vh;
     font-size: 1.3em;
-
+    gap: 100px;
     section {
-      padding: 10%;
-
       h1 {
         font-size: 1em;
         margin: 0;
@@ -37,6 +35,20 @@
       .date {
         color: $secondaryDarker;
         font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  #education {
+    .content {
+      flex-direction: column;
+      align-items: start;
+      gap: 50px;
+
+      section {
+        padding: 0;
       }
     }
   }

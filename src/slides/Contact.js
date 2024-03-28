@@ -13,11 +13,7 @@ function Contact() {
             <h1>CONTACT</h1>
             <p>adnanskopljakofficial@gmail.com</p>
             <p>Kreševo, Bosnia and Herzegovina</p>
-          </section>
-
-          <section className="socials">
-            <h1>SOCIALS</h1>
-            <div className="social-subsection">
+            <div className="socials">
               <i className="fa-brands fa-github fa-2x"></i>
               <i className="fa-brands fa-instagram fa-2x"></i>
               <i className="fa-brands fa-discord fa-2x"></i>
