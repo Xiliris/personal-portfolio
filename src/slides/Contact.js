@@ -1,12 +1,29 @@
 import "./Contact.scss";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div id="contact">
       <div className="title">
-        <h1>CONTACT</h1>
+        <h1
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0)" : "translateX(-100px)",
+          }}
+        >
+          CONTACT
+        </h1>
       </div>
-      <div className="content">
+      <div
+        className="content"
+        ref={ref}
+        style={{
+          opacity: isInView ? 1 : 0,
+        }}
+      >
         <h3>CONTACT</h3>
         <main>
           <section className="contacts">

@@ -57,14 +57,24 @@
       textarea {
         width: 100%;
         background-color: transparent;
-        border: 1px solid $secondary;
+        border: 2px solid $secondary;
         border-radius: 6px;
         padding: 15px;
         color: $secondary;
         font-size: 1em;
+        outline: none;
+
+        &:hover {
+          border: 2px solid $backgroundLighter;
+        }
+        &:focus {
+          border: 2px solid $backgroundLighter !important;
+        }
       }
+
       textarea {
         height: 150px;
+        resize: none;
       }
 
       button {
@@ -74,6 +84,12 @@
         background-color: $backgroundLighter;
         font-size: 1em;
         font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $background;
+        }
       }
     }
   }
