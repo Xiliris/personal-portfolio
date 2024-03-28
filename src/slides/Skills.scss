@@ -16,7 +16,7 @@
 
     padding: 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     height: 80vh;
     font-size: 1.5em;
@@ -30,8 +30,7 @@
       border: 1px solid $secondaryDarker;
       border-radius: 12px;
       padding: 20px;
-      width: 100px;
-      height: 130px;
+      min-width: 100px;
       margin: 0;
 
       img {
@@ -46,6 +45,51 @@
         margin: 0;
         margin-top: 20px;
         font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #skills {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #skills {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #skills {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      .list-skill {
+        padding: 5px;
+        min-width: 75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #skills {
+    .content {
+      grid-template-columns: 1fr 1fr 1fr;
+      p {
+        display: none;
       }
     }
   }

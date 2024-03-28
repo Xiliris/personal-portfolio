@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 
     height: 80vh;
     font-size: 1.3em;
@@ -28,20 +29,18 @@
       flex-direction: column;
       gap: 50px;
       flex-grow: 1;
-      padding-right: 10%;
+
       .socials {
-        .social-subsection {
-          display: flex;
-          justify-content: space-between;
-          width: 300px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
 
-          i {
-            cursor: pointer;
-            transition: all 0.3s ease;
+        i {
+          cursor: pointer;
+          transition: all 0.3s ease;
 
-            &:hover {
-              transform: scale(1.1);
-            }
+          &:hover {
+            transform: scale(1.1);
           }
         }
       }
@@ -75,6 +74,43 @@
         background-color: $backgroundLighter;
         font-size: 1em;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    .content {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      main {
+        gap: 20px;
+        h1 {
+          margin: 0;
+        }
+      }
+      .message {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #contact {
+    .content {
+      main {
+        p {
+          font-size: 0.7em;
+        }
+        .socials {
+          gap: 20px;
+          i {
+            transform: scale(0.7);
+          }
+        }
       }
     }
   }

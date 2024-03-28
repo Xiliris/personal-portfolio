@@ -21,8 +21,13 @@
     content: "";
     display: block;
     background: linear-gradient(90deg, $background 10%, transparent);
-    width: 30%;
+    width: 45%;
     height: 1px;
+  }
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 3.5em;
+    }
   }
 }
 
@@ -44,10 +49,15 @@
     content: "";
     display: block;
     background: linear-gradient(90deg, $background 10%, transparent);
-    width: 30%;
+    width: 45%;
     height: 1px;
     transform: rotate(180deg);
     float: right;
+  }
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 3.5em;
+    }
   }
 }
 
