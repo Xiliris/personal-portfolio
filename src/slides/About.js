@@ -30,7 +30,12 @@ function About() {
           developing high-quality, modern content. my abilities do not stop
           there, as I am skilled in Back-end technologies and more.
         </p>
-        <a href={adnanCV} download="adnanCV" target="_blank" rel="noreferrer">
+        <a
+          href={adnanCV}
+          download="AdnanSkopljakCV"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button>DOWNLOAD CV</button>
         </a>
       </div>
