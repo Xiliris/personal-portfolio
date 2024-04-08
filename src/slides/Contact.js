@@ -72,28 +72,28 @@ function Contact() {
                 href="https://github.com/Xiliris"
                 target="_blank"
                 rel="noreferrer"
-              >
+                aria-label="GitHub Profile"         >
                 <i className="fa-brands fa-github fa-2x"></i>
               </a>
               <a
                 href="https://www.instagram.com/adnan.sko/"
                 target="_blank"
                 rel="noreferrer"
-              >
+                aria-label="Instagram Profile"              >
                 <i className="fa-brands fa-instagram fa-2x"></i>
               </a>
               <a
                 href="https://discordapp.com/users/400414917070422017"
                 target="_blank"
                 rel="noreferrer"
-              >
+                aria-label="Discord Profile"              >
                 <i className="fa-brands fa-discord fa-2x"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/adnan-skopljak-646994257/"
                 target="_blank"
                 rel="noreferrer"
-              >
+                aria-label="LinkedIn Profile"              >
                 <i className="fa-brands fa-linkedin-in fa-2x"></i>
               </a>
             </div>
