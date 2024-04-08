@@ -7,6 +7,20 @@
   justify-content: center;
   flex-direction: column;
 
+  button {
+    padding: 15px;
+    border: 1px solid $backgroundLighter;
+    background-color: $backgroundLighter;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $background;
+    }
+  }
+
   .title {
     @include title;
   }
@@ -83,17 +97,6 @@
 
       button {
         width: 100%;
-        padding: 15px;
-        border: 1px solid $backgroundLighter;
-        background-color: $backgroundLighter;
-        font-size: 1em;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-          background-color: $background;
-        }
       }
     }
   }
@@ -121,9 +124,23 @@
 @media screen and (max-width: 420px) {
   #contact {
     .content {
+      flex-direction: column-reverse;
       main {
-        p {
-          font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .contacts {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h1 {
+            display: none;
+          }
+          p {
+            font-size: 0.8em;
+          }
         }
         .socials {
           gap: 20px;
